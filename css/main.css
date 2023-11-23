@@ -1,0 +1,343 @@
+header{
+    width: 100%;
+    height: 8.8rem;
+    display:flex;
+    align-items: center;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.24);
+    background: linear-gradient(89deg, #000205 -10.97%, #000205 116.69%);
+}
+
+header nav{
+    display: flex;
+    align-items: center;
+    gap:3.2rem
+}
+header .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+header .btn-mobile{
+    display: none;
+}
+header nav ul{
+    display: flex;
+    gap: 4rem;
+}
+header nav ul li a{
+    color: var(--gray-100);
+    font-size: 1.6rem;
+    letter-spacing: -0.48px; 
+    transition: opacity .2s ease;
+}
+header nav ul li a:hover{
+    opacity: 0.7;
+}
+
+/* Style Section Hero*/
+.s-hero {
+    position: relative;
+    width: 100%;
+    padding-top: 11.3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+  }
+  
+  .s-hero::after {
+    content: "";
+    width: 100%;
+    height: 22rem;
+    background-color: var(--pink-10);
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+  }
+  
+  .s-hero .text {
+    position: relative;
+    width: 100%;
+    max-width: 71.9rem;
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 6.4rem;
+  }
+  
+  .s-hero .text h1 {
+    position: relative;
+    font-weight: 600;
+    letter-spacing: -1.68px;
+  }
+  
+  .s-hero .text h1::before {
+    content: '';
+    max-width: 59.9rem;
+    height: 2.2rem;
+    background: url("../imgs/line-title.svg") no-repeat left center;
+    position: absolute;
+    left: 3.9rem;
+    bottom: -5px;
+    z-index: -1;
+    animation: drawLine 1s 0.5s ease-in forwards;
+  }
+  
+ 
+  
+  .s-hero .text p {
+    max-width: 55.6rem;
+    margin: 0 auto;
+    letter-spacing: -0.54px;
+    margin-top: 2.4rem;
+    margin-bottom: 3.2rem;
+    color: var(--gray-300);
+  }
+  
+  .s-hero .text .arrow {
+    position: absolute;
+    bottom: 1.7rem;
+    left: 5.5rem;
+    animation: floating 3s ease-in-out infinite;
+  }
+
+  .s-hero .ilustra{
+    padding: 1.5rem;
+  }
+
+  .s-hero .ilustra-mobile{
+    display: none;
+  }
+/*Section Digital*/
+.s-digital {
+    display: none;
+    padding-top:12.8rem ;
+}
+.s-digital h3{
+    letter-spacing: -1.2px;
+    max-width: 53.5rem; 
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 6.4rem;
+}
+
+.s-digital ul{
+    display: flex;
+   justify-content: space-between;
+   border-bottom: 1px solid var(--gray-800);
+   padding-bottom: 12.8rem;
+}
+
+/*Section Art*/
+.s-art{
+   padding: 12.8rem;
+   display: none;
+}
+
+.s-art .title-text{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 6.4rem;
+}
+.s-art .title-text h3{
+    letter-spacing: -1.2px; 
+    font-weight: 600; 
+}
+.s-art .title-text p{
+    color: var(--gray-600);
+    letter-spacing: -0.54px; 
+    margin-top: 1.6rem;
+}
+.s-art .title-text .left{
+    max-width: 53.9rem;
+   
+}
+.s-art .title-text .left p{
+    max-width: 45.2rem;
+}
+.s-art .title-text .right{
+    max-width: 42.9rem;
+}
+
+.s-art .all {
+    display: grid;
+    grid-template-columns:repeat(3, 1fr);
+    gap:3.2rem;
+
+}
+
+.s-art .all .card-art:first-child{
+    grid-column: span 2;
+
+}
+
+/*Section  Newsletter*/
+
+.s-newsletter{
+    display: none;
+    background-color: var(--pink-10);
+    padding: 8.9rem 0;
+}
+.s-newsletter .container{
+    text-align: center;
+}
+.s-newsletter h2{
+    font-weight: 600;
+    letter-spacing: -1.44px; 
+    max-width: 64.6rem;
+    padding-bottom: 1.6rem;
+    margin: 0 auto;
+}
+.s-newsletter  p{
+    max-width: 68.7rem;
+    color: var(--gray-100);
+    font-size: 2.2rem;
+    font-weight: 400;
+    letter-spacing: -0.66px;
+    margin: 0 auto;
+    margin-bottom: 2.4rem;
+}
+
+/*Footer Style*/
+footer{
+    padding: 4.8rem 0;
+    display: none;
+}
+
+footer .main-area{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.24);
+    padding-bottom: 6.4rem;
+    margin-bottom: 2.4rem;
+}
+footer .main-area .left{
+    max-width: 27.9rem;
+}
+footer .main-area .left p{
+    margin-top: 2.4rem;
+    color: var(--gray-600);
+    font-size: 1.6rem;
+    line-height: 150%; 
+    letter-spacing: -0.48px; 
+}
+
+footer .main-area .right{
+    flex-grow: 1;
+    max-width: 72.9rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+footer .main-area .right .text-list h6{
+    color: var(--gray-100);
+    font-family: 'Inter',sans-serif;
+    font-size: 1.6rem;
+    font-weight: 600;
+    letter-spacing: -0.48px;
+    margin-bottom: 3.5rem;
+}
+
+footer .main-area .right .text-list ul li:not(:last-child){
+    margin-bottom: 3.2rem;
+}
+
+footer .main-area .right .text-list ul li a {
+    color: var(--gray-600);
+    font-size: 1.6rem;
+    letter-spacing: -0.48px;
+    transition: color .3s ease;
+    display: flex;
+    gap: 1.8rem;
+    align-items: center;
+}
+footer .main-area .right .text-list ul li a:hover{
+    color: var(--gray-100);
+}
+
+foooter .copy{
+    color: var(--gray-600);
+    letter-spacing: -0.48px; 
+}
+
+foooter .copy strong{
+    font-weight: 600;
+}
+
+
+@media(max-width:1200px){
+
+}
+@media(max-width:991px){
+    .s-hero::after{
+        height: 13rem;
+    }
+}
+@media(max-width:768px){
+    header nav{
+        display: none;
+    }
+    header .btn-mobile{
+        display: block;
+    }
+    .s-hero{
+        padding: 6rem;
+    }
+    .s-hero .text h1{
+        max-width: 49rem;
+        margin: 0 auto;
+    }
+    .s-hero .text h1::before{
+        left: 0;
+        bottom: -4px;
+        background-size: 100%;
+    }
+    .s-hero .text p{
+        max-width: 41.6rem;
+    }
+
+  C{
+        bottom: 3.7rem;
+        left: 4rem;
+        max-width: 6rem;
+    }
+
+}
+@media(max-width:560px){
+    header{
+        height: 7.2rem;
+    }
+    header .logo{
+        max-width: 16rem;
+    }
+
+    .s-hero{
+        padding-top: 8.8rem;
+    }
+    .s-hero.text h1{
+        font-size: 4rem;
+    }
+    .s-hero .text h1::before{
+        bottom: -6px;
+    }
+    .s-hero .text p{
+        margin-top: 0.8rem;
+        margin-bottom: 2.4rem;
+        font-size: 1.6rem;
+    }
+    .s-hero .text .arrow{
+        display: none;
+    }
+    .s-hero .ilustra {
+        display: none;
+
+    }
+    .s-hero .ilustra-mobile{
+        display: block;
+    }
+    .s-hero::after{
+        height: 22rem;
+    }
+}
